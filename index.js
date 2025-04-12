@@ -3,7 +3,7 @@ const app = express();
 const port = 8080;
 
 app.get('/', (req, res) => {
-    res.send('Hello World --     '+ new Date().toLocaleString());
+    res.send('Hello World new india time  --     '+ new Date().toLocaleString('en-IN', { timeZone: 'Asia/Kolkata' }));
 });
 
 // end point to get sum of two numbers
